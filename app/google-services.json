@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "195858705215",
+    "project_id": "overlay-e9c56",
+    "storage_bucket": "overlay-e9c56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195858705215:android:3279830e7f0cfd3d61818a",
+        "android_client_info": {
+          "package_name": "com.peditor.greens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195858705215-huv20g15mpnsh9e6avu59v81fpjkr8b6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZwf9oXyrv5SYwmgoNfJCGOM3nuUdYFJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195858705215-huv20g15mpnsh9e6avu59v81fpjkr8b6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

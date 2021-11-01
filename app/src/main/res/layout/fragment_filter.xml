@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FilterFragment">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/btnEffect1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_1"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnEffect2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_2"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnEffect3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_3"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnEffect4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_4"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnEffect5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_5"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnEffect6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_6"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnEffect7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_7"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnEffect8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_8"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnEffect9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_9"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnEffect10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_10"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnEffect11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_11"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnEffect12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_12"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnEffect13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_13"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnEffect14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_14"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnEffect15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_15"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnEffect16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/filter_16"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
