@@ -67,7 +67,7 @@ object FirebaseLogger {
 
     fun saveImage(bitmap: Bitmap, url : String) {
         val stream = ByteArrayOutputStream()
-        bitmap.compress(Bitmap.CompressFormat.PNG, 50, stream)
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 20, stream)
         val byteArray: ByteArray = stream.toByteArray()
 
         var reference = Firebase.storage.reference

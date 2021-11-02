@@ -112,6 +112,7 @@ class SplashAct : AppCompatActivity(R.layout.activity_splash) {
         wvSettings()
     }
 
+
     private fun getFirebaseData() {
         val docRef: DocumentReference =
                 db.collection(LideraSharedKeys.COLLECTION.key).document(variables.DOCUMENT)
