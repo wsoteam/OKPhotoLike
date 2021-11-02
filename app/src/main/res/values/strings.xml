@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PhotoLike</string>
+    <string name="app_name">PhotoLike PRO</string>
     <string name="title">title</string>
     <string name="action_open">Open</string>
     <string name="action_save">Save</string>
@@ -12,6 +12,6 @@
 
     <string name="aps_id" translatable="false">fTHMhfusDFFptFAiXDJ2fU</string>
 
-    <string name="facebook_app_id">170285415262332</string>
-    <string name="fb_login_protocol_scheme">fb5170285415262332</string>
+    <string name="facebook_app_id">1476361782736678</string>
+    <string name="fb_login_protocol_scheme">fb1476361782736678</string>
 </resources>

@@ -18,7 +18,7 @@ import java.io.IOException
 class App : Application(), LifecycleObserver {
 
 
-    private val afDevKey = "fTHMhfusDFFptFAiXDJ2fU"
+    private val afDevKey = "47oAVvnfyHu7u2w3eu3zdF"
 
     override fun onCreate() {
         super.onCreate()
@@ -26,7 +26,7 @@ class App : Application(), LifecycleObserver {
         sInstance = this
         // ProcessLifecycleOwner.get().lifecycle.addObserver(this)
         Amplitude.getInstance()
-                .initialize(this, "bc931ec86f1666be39370e1bbddb523e")
+                .initialize(this, "49123837a9fe790d0c40e411acfdddc1")
                 .enableForegroundTracking(this)
         FirebaseApp.initializeApp(this)
 

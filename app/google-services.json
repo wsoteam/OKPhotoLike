@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "195858705215",
-    "project_id": "overlay-e9c56",
-    "storage_bucket": "overlay-e9c56.appspot.com"
+    "project_number": "831618945319",
+    "project_id": "okfirst-e9e9b",
+    "storage_bucket": "okfirst-e9e9b.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:195858705215:android:3279830e7f0cfd3d61818a",
+        "mobilesdk_app_id": "1:831618945319:android:9de7e51d04c3a0d3579902",
         "android_client_info": {
-          "package_name": "com.peditor.greens"
+          "package_name": "com.procam.photoproedicam"
         }
       },
       "oauth_client": [
         {
-          "client_id": "195858705215-huv20g15mpnsh9e6avu59v81fpjkr8b6.apps.googleusercontent.com",
+          "client_id": "831618945319-4mvmt063qslnah1clod3fov2i7m16l9p.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDZwf9oXyrv5SYwmgoNfJCGOM3nuUdYFJM"
+          "current_key": "AIzaSyCWKs6cC_aJpGoXh1zmbWAlJr7KcbrMOFA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "195858705215-huv20g15mpnsh9e6avu59v81fpjkr8b6.apps.googleusercontent.com",
+              "client_id": "831618945319-4mvmt063qslnah1clod3fov2i7m16l9p.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
